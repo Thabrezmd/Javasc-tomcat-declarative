@@ -56,12 +56,11 @@ pipeline {
   
           stage('Stage-10 : SmokeTest') { 
             steps {
-                sh 'curl --retry-delay 10 --retry 5 "http://43.204.38.166.118:8080/thabrez"'
+                sh 'curl --retry-delay 10 --retry 5 "http://43.204.38.166:8080/thabrez"'
             }
         }
         
         
           
     }
-   
 }
